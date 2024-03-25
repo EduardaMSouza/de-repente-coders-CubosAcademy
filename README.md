@@ -48,6 +48,56 @@
 - <h5>Aprimorar cadastro/atualização de produto</h5>
 <br>
 
+<h1>Como rodar na sua máquina:</h1>
+<h2>Avisos:</h2>
+<ul>
+  <li>Certifique-se de ter o Node.js instalado em seu sistema.</li>
+  <li>Tenha o Git instalado em seu sistema.</li>
+</ul>
+
+<h2>Passo a passo:</h2>
+<ol>
+  <li>
+    <strong>Clone o repositório:</strong>
+    <pre><code>git clone https://github.com/EduardaMSouza/de-repente-coders-CubosAcademy.git</code></pre>
+  </li>
+
+  <li>
+    <strong>Acesse o diretório do projeto:</strong>
+    <pre><code>cd de-repente-coders-CubosAcademy</code></pre>
+  </li>
+
+  <li>
+    <strong>Instale as dependências:</strong>
+    <pre><code>npm install</code></pre>
+  </li>
+
+  <li>
+    <strong>Configure as variáveis de ambiente:</strong>
+    <p>Crie um arquivo chamado <code>.env</code> na raiz do projeto e defina as variáveis de ambiente conforme necessário. Por exemplo:</p>
+    <pre>
+      <code>PORT=3000
+DATABASE_URL=postgres://user:password@localhost:5432/database
+JWT_SECRET=your_jwt_secret</code>
+    </pre>
+    <p>Substitua <code>user</code>, <code>password</code>, <code>localhost</code>, <code>5432</code>, <code>database</code>, e <code>your_jwt_secret</code> pelos valores correspondentes ao seu ambiente.</p>
+  </li>
+
+  <li>
+    <strong>Execute o projeto:</strong>
+    <ul>
+      <li><strong>Desenvolvimento (com nodemon):</strong></li>
+      <pre><code>npm run dev</code></pre>
+      <li><strong>Produção:</strong></li>
+      <pre><code>npm start</code></pre>
+    </ul>
+    <p>O servidor deve iniciar e você poderá acessá-lo em <code>https://localhost:3000</code> (se a porta for definida como 3000 no arquivo <code>.env</code>). Certifique-se de que a porta que você especificou no arquivo <code>.env</code> não está sendo utilizada por outro processo.</p>
+  </li>
+</ol>
+
+
+
+
 <h1>Sprints detalhadas</h1>
 
 <details>
